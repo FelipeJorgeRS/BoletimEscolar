@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		
+		// PROGRAMA QUE RECEBE DUAS NOTAS( TRABALHOS, PORVAFINAL) E CALCULA A MÉDIA COMO NOTA FINAL 
+		// IMPRIMINDO NO CONSOLE SE O ALUNO FOI APROVADO( nota Maior que 7) OU NÂO.
+		
+		Scanner leitor = new Scanner (System.in);
+		
+		// variáveis
+		double trabalhos=0.0;
+		double provaFinal= 0.0;
+		double notaFinal=0.0;
+		
+		// entradas
+		System.out.println("Digite a nota dos trabalhos(entre 0 e 10)");
+		trabalhos= leitor.nextDouble();
+		
+		System.out.println("Digite a nota da Prova Final(entre 0 e 10)");
+		provaFinal= leitor.nextDouble();
+		
+		// processamento
+		
+		notaFinal= (trabalhos + provaFinal)/2;
+		
+		System.out.println("A nota final é " + notaFinal + " pontos");
+		
+		if(notaFinal >=7) {
+			System.out.println("Aprovado");
+		} else { 
+			System.out.println("Reprovado");
+			
+		} // fim do bloco if else	
+		
+		} // fim do método main
+		
+	} //fim da classe Program
+
